@@ -1,3 +1,4 @@
+import 'package:catelog_app/pages/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,8 +9,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(
-        child: Text("Hello World"),
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
+      theme: ThemeData(
+        primarySwatch: Colors.amber,
       ),
     );
   }
